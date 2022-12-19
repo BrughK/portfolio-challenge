@@ -1,5 +1,5 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Roboto" ,sans-serif;
   }
 
 
@@ -14,15 +14,16 @@ header {
   height: 6rem;
   width: 100%;
   background-color: #121d27;
-  color: rgb(134, 207, 230);
+  color: rgb(158, 204, 218);
   }
 
 h1 {
   font-size: 3rem;
-  background-color: rgb(134, 207, 230);
+  background-color: rgb(158, 204, 218);
   color: #121d27;
   margin: 0 0.75rem;
   padding: 0.15rem 0.55rem;
+  display: flex;
 }
 
 nav ul {
@@ -33,7 +34,7 @@ nav ul {
 }
 
 nav a {
-  color: rgb(134, 207, 230);
+  color: rgb(158, 204, 218);
   text-underline-offset: 7px;
   text-decoration: underline;
   text-align: center;
@@ -58,7 +59,7 @@ img {
   font-size: 2rem;
   top: -6rem;
   background-color: #121d27;
-  color: rgb(134, 207, 230);
+  color: rgb(158, 204, 218);
   padding: 0.5rem 1rem;
   right: .75rem;
 }
@@ -77,17 +78,151 @@ section h2 {
   color: #121d27;
   padding: 1rem;
   border-right: solid  0.25rem;
-  flex: 1 0 14rem;
+  flex: 1 0 20rem;
 }
 
-.about {
+#about {
   width: 100%;
   margin: 0 1rem 0 2rem;
 }
 
-.port {
+#port {
   width: 100%;
-  margin: 0 1rem 0 2rem;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2%;
+  padding-bottom: 1%;
+}
+
+.container {
+  width:75%;
+}
+
+.large-box {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-image: url(../images/city1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  border: solid rgb(158, 204, 218) .65rem;
+  text-decoration: none;
+  box-shadow: 3px 3px #00000046
+}
+
+.large-box h3 {
+  background-color: rgb(158, 204, 218);
+  color: #121d27;
+  font-size:30px;
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  margin: 1rem 1rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.box1 {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/city2.jpg);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1%;
+  border: solid rgb(158, 204, 218) .65rem;
+  box-shadow: 3px 3px #00000046
+}
+
+.box1 h3 {
+  background-color: rgb(158, 204, 218);
+  color: #121d27;
+  font-size:30px;
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+
+
+.box2 {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/city3.jpg);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1%;
+  border: solid rgb(158, 204, 218) .65rem;
+  box-shadow: 3px 3px #00000046
+}
+
+.box2 h3 {
+  background-color: rgb(158, 204, 218);
+  color: #121d27;
+  font-size:30px;
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+
+.box3 {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/city4.jpg);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1%;
+  border: solid rgb(158, 204, 218) .65rem;
+  box-shadow: 3px 3px #00000046
+}
+
+.box3 h3 {
+  background-color: rgb(158, 204, 218);
+  color: #121d27;
+  font-size:30px;
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+
+.box4 {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/city5.jpg);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1%;
+  border: solid rgb(158, 204, 218) .65rem;
+  box-shadow: 3px 3px #00000046
+}
+
+.box4 h3 {
+  background-color: rgb(158, 204, 218);
+  color: #121d27;
+  font-size:30px;
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 1rem 0.5rem;
 }
 
 p {
@@ -96,12 +231,24 @@ p {
   color: #121d27;
 }
 
+.containerS {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5%;
+}
+
+
 #contact ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style-type: none;
+}
+
+
+#contact a:hover{
+  color: #28425a;
+  border-bottom: solid #28425a 0.15rem;
 }
 
 #contact a {
@@ -110,4 +257,12 @@ p {
   font-size: 1.25rem;
   font-weight: bold;
   padding: 0.5rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .header{
+      flex-direction: column;
+  
+  }
 }
