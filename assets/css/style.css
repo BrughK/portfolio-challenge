@@ -6,7 +6,7 @@ body {
 a {
   text-decoration: none;
 }
-
+/* Top heading bar */
 header {
   display: flex;
   justify-content: space-between;
@@ -16,23 +16,28 @@ header {
   background-color: #121d27;
   color: rgb(158, 204, 218);
   }
-
-h1 {
+/* The Kasen Brugh box top left */
+.header h1 {
   font-size: 3rem;
   background-color: rgb(158, 204, 218);
   color: #121d27;
-  margin: 0 0.75rem;
-  padding: 0.15rem 0.55rem;
-  display: flex;
+  margin: 1rem 0 1rem 1rem;
+  padding: 0.25rem 0.65rem;
+  display: inline-block;
 }
-
-nav ul {
+/* The tabs in top right */
+.header nav ul {
   display: flex;
   gap: 0.5rem;
   margin: 0.5rem;
   list-style-type: none;
 }
-
+/* each specific section on the top right */
+.header li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+/* text styling for top right tabs */
 nav a {
   color: rgb(158, 204, 218);
   text-underline-offset: 7px;
@@ -46,59 +51,86 @@ nav a {
 nav a:hover {
   color: white;
 }
-
-img {
+/* city stuff */
+.slogan-box {
+  height: 200px;
   width: 100%;
-  height: 20rem;
-  object-fit: fill;
+  background-image: url(../images/city\ banner.jpg);
+  background-position: center;
+  background-size: fill;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  padding-bottom: 0.5rem;
 }
-
+/* The COOL SLOGAN box */
 #slogan {
-  float: right;
-  position: relative;
-  font-size: 2rem;
-  top: -6rem;
+  font-size: 27px;
   background-color: #121d27;
   color: rgb(158, 204, 218);
-  padding: 0.5rem 1rem;
-  right: .75rem;
+  border: 0rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
 }
 
-section {
+.aboutTxt {
+  margin-top: 2rem;
   display: flex;
   width: 100%;
-  margin: 1.5rem;
-  margin-left: 0;
 }
 
-section h2 {
+.aboutDiv {
+  padding-right: 16px;
+  width: 190.5px;
+}
+
+
+/* The "About Me" text */
+.aboutTxt h2 {
   text-align: right;
   font-size: 3rem;
   font-weight: bold;
   color: #121d27;
-  padding: 1rem;
-  border-right: solid  0.25rem;
-  flex: 1 0 20rem;
 }
-
+/* whole about me paragraph text */
 #about {
-  width: 100%;
-  margin: 0 1rem 0 2rem;
-}
-
-#port {
-  width: 100%;
-  display:flex;
-  justify-content: center;
+  color: #121d27;
+  padding-left: 1rem;
+  flex-direction: column;
   align-items: flex-start;
-  margin-top: 2%;
-  padding-bottom: 1%;
+  display: flex;
+  width: 80%;
+  border-left: solid  0.25rem;
 }
 
+.work {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.workDiv {
+  
+  padding-right: 16px;
+  width: 190.5px;
+}
+
+.work h2 {
+  text-align: right;
+  color: #121d27;
+  font-size: 3rem;
+}
+/* Entire section of projects */
 .container {
   width:75%;
+  padding: 1rem;
+  justify-content: center;
+  border-left: solid  0.25rem;
 }
-
+/* Big first project */
 .large-box {
   height: 600px;
   width: 100%;
@@ -108,11 +140,16 @@ section h2 {
   background-position: center;
   display: flex;
   align-items: flex-end;
-  border: solid rgb(158, 204, 218) .65rem;
+  border: solid rgb(158, 204, 218) .75rem;
   text-decoration: none;
-  box-shadow: 3px 3px #00000046
+  box-shadow: 3px 3px #00000046;
+  min-width: 700px;
 }
 
+.large-box:hover {
+   opacity: 80%;
+}
+/* Callout Box of Big Project */
 .large-box h3 {
   background-color: rgb(158, 204, 218);
   color: #121d27;
@@ -120,8 +157,13 @@ section h2 {
   display: flex;
   flex-direction:column;
   align-items:flex-start;
-  margin: 1rem 1rem 1rem 0rem;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem .5rem 1rem .5rem;
+  margin-bottom: 2rem;
+}
+
+/* Smaller Project 1 */
+.box1:hover{
+  opacity: 80%;
 }
 
 .box1 {
@@ -134,10 +176,10 @@ section h2 {
   display: flex;
   align-items: flex-end;
   padding-bottom: 1%;
-  border: solid rgb(158, 204, 218) .65rem;
+  border: solid rgb(158, 204, 218) .75rem;
   box-shadow: 3px 3px #00000046
 }
-
+/* Callout Box of Project */
 .box1 h3 {
   background-color: rgb(158, 204, 218);
   color: #121d27;
@@ -149,6 +191,10 @@ section h2 {
   padding: 1rem 1rem 1rem 0.5rem;
 }
 
+/* Smaller Project 2 */
+.box2:hover{
+  opacity: 80%;
+}
 
 .box2 {
   height: 350px;
@@ -160,10 +206,10 @@ section h2 {
   display: flex;
   align-items: flex-end;
   padding-bottom: 1%;
-  border: solid rgb(158, 204, 218) .65rem;
+  border: solid rgb(158, 204, 218) .75rem;
   box-shadow: 3px 3px #00000046
 }
-
+/* Callout Box of Project */
 .box2 h3 {
   background-color: rgb(158, 204, 218);
   color: #121d27;
@@ -173,6 +219,11 @@ section h2 {
   align-items:flex-start;
   margin-bottom: 2rem;
   padding: 1rem 1rem 1rem 0.5rem;
+}
+
+/* Smaller Project 3 */
+.box3:hover{
+  opacity: 80%;
 }
 
 .box3 {
@@ -185,10 +236,10 @@ section h2 {
   display: flex;
   align-items: flex-end;
   padding-bottom: 1%;
-  border: solid rgb(158, 204, 218) .65rem;
+  border: solid rgb(158, 204, 218) .75rem;
   box-shadow: 3px 3px #00000046
 }
-
+/* Callout Box of Project */
 .box3 h3 {
   background-color: rgb(158, 204, 218);
   color: #121d27;
@@ -198,6 +249,11 @@ section h2 {
   align-items:flex-start;
   margin-bottom: 2rem;
   padding: 1rem 1rem 1rem 0.5rem;
+}
+
+/* Smaller Project 4 */
+.box4:hover{
+  opacity: 80%;
 }
 
 .box4 {
@@ -210,10 +266,10 @@ section h2 {
   display: flex;
   align-items: flex-end;
   padding-bottom: 1%;
-  border: solid rgb(158, 204, 218) .65rem;
+  border: solid rgb(158, 204, 218) .75rem;
   box-shadow: 3px 3px #00000046
 }
-
+/* Callout Box of Project */
 .box4 h3 {
   background-color: rgb(158, 204, 218);
   color: #121d27;
@@ -224,45 +280,142 @@ section h2 {
   margin-bottom: 2rem;
   padding: 1rem 1rem 1rem 0.5rem;
 }
-
-p {
+/* Parapgraph text in the about me section */
+#about p {
   line-height: 1.5;
   margin-bottom: 1rem;
   color: #121d27;
 }
-
+/* the container that holds the 4 smaller projects in a grid */
 .containerS {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 1.5%;
 }
 
+/* The entire contact section at the bottom */
+#contact {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+}
 
+.contactDiv {
+  padding-left: 16px;
+  width: 190.5px;
+}
+
+/* The actual "Contact Me" text */
+#contact h2 {
+  color: #121d27;
+  /* padding-left: 1rem; */
+  /* margin: 1.5rem; */
+  font-size: 3rem;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  display: flex;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+/* Each tab inside the contact me list */
 #contact ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-left: solid  0.25rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-
+/* makes hover change color */
 #contact a:hover{
   color: #28425a;
   border-bottom: solid #28425a 0.15rem;
 }
-
+/* adds links to github and styling */
 #contact a {
   color: #121d27;
   border-bottom: solid #121d27 0.25rem;
   font-size: 1.25rem;
   font-weight: bold;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-@media only screen and (max-width: 900px) {
-  .header{
-      flex-direction: column;
-  
+@media only screen and (max-width: 992px) {
+  .header {
+    flex-direction: column;
   }
+
+  .header nav ul {
+    margin: 3% 0;
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content h2 {
+    width: 100%;
+    text-align: center;
+    padding: 3% 0;
+  }
+
+  .aboutTxt {
+    width: 100%;
+    padding: 3%;
+    border: none;
+  }
+  .containerS {
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .workDiv {
+    width: 100%;
+  }
+
+  .work h2 {
+    text-align: center;
+    padding: 3% 0;
+  }
+
+  .container {
+    border: none;
+    padding: 3%;
+    width: 100%;
+  }
+
+  .contactM {
+    flex-direction: column;
+    margin: 3% 0;
+  }
+
+  .contact h2 {
+    width: 100%;
+    text-align: center;
+    padding: 3% 0;
+    flex-direction: column;
+  }
+
+  .contactDiv {
+    width: 100%;
+    flex-direction: column;
+    border: none;
+  }
+
+  #contact ul {
+    margin-top: 3%;
+    flex-direction: column;
+  }
+
 }
