@@ -1,4 +1,4 @@
-# portfolio-challenge
+# Portfolio Challenge
 
 ## Description
 - First attempt at making the foundations of a portfolio website from scratch. 
