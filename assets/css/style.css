@@ -131,9 +131,9 @@ nav a:hover {
   height: 600px;
   width: 100%;
   margin-bottom: 1rem;
-  background-image: url(../images/city1.jpg);
+  background-image: url('https://github.com/BrughK/Project-1/raw/main/assets/images/127.0.0.1_5500_index.html%20(1).png');
   background-size: cover;
-  background-position: center;
+  background-position: top; 
   display: flex;
   align-items: flex-end;
   border: solid rgb(158, 204, 218) .75rem;
